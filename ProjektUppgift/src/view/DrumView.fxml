@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DrumController">
+   <children>
+      <Circle fx:id="kick1" fill="WHITE" layoutX="225.0" layoutY="275.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="kick2" fill="WHITE" layoutX="375.0" layoutY="275.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="snare" fill="WHITE" layoutX="187.0" layoutY="238.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="tom1" fill="WHITE" layoutX="249.0" layoutY="151.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="tom2" fill="WHITE" layoutX="366.0" layoutY="151.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="tom3" fill="WHITE" layoutX="455.0" layoutY="249.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="crash" fill="#ffab1e" layoutX="162.0" layoutY="88.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="ride" fill="#ffab1e" layoutX="455.0" layoutY="97.0" radius="75.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="hiHat" fill="#ffab1e" layoutX="122.0" layoutY="200.0" radius="49.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="crash2" fill="#ffab1e" layoutX="292.0" layoutY="68.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="helpButton" layoutY="2.0" mnemonicParsing="false" text="?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="c" layoutX="227.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="v" layoutX="344.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="V" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="b" layoutX="167.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="d" layoutX="225.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="f" layoutX="346.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="g" layoutX="438.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="h" layoutX="87.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="j" layoutX="449.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="k" layoutX="151.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="K" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Text fx:id="l" layoutX="284.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="hotkeyEnabler" layoutX="4.0" layoutY="363.0" mnemonicParsing="false" text="Hotkeys on/off">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </CheckBox>
+      <Polygon fx:id="cowbell" fill="DODGERBLUE" layoutX="303.0" layoutY="210.0" scaleX="0.5" scaleY="0.7" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Text fx:id="m" layoutX="287.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" visible="false">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

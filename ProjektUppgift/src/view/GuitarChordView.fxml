@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GuitarChordController">
+   <tabs>
+      <Tab closable="false" text="A-Chords">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane layoutY="14.0" prefHeight="201.0" prefWidth="600.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="A" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chords/A/A.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="A7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/A/A7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Am" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Images/Chords/A/Am.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Am7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Images/Chords/A/Am7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="A6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                           <image>
+                              <Image url="@../Images/Chords/A/A6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="A9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                           <image>
+                              <Image url="@../Images/Chords/A/A9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Abchord" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/A/Abchord.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Asharp" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/A/Asharp.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Asharpm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/A/Asharpm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Asharpm7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/A/Asharpm7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Asharpmaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/A/Asharpmaj7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Adim" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/A/Adim.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="73.0" layoutY="215.0" text="Click on a chord to listen!">
+                     <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="B-Chords">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane layoutY="14.0" prefHeight="201.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="B" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chords/B/B.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="B7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/B/B7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Bm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Images/Chords/B/Bm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Bm7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Images/Chords/B/Bm7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="B4" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                           <image>
+                              <Image url="@../Images/Chords/B/B4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="B7sharp9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                           <image>
+                              <Image url="@../Images/Chords/B/B7sharp9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Bmmaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/B/Bmmaj7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="B11" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/B/B11.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Bm6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/B/Bm6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Bm7b5" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/B/Bm7b5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Bmaj" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/B/Bmaj.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Bmsus9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/B/Bmsus9.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="73.0" layoutY="215.0" text="Click on a chord to listen!">
+                     <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="C-Chords">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane layoutY="14.0" prefHeight="201.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="C" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chords/C/C.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="C7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/C/C7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Cm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Images/Chords/C/Cm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Cm7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Images/Chords/C/Cm7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="C11" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                           <image>
+                              <Image url="@../Images/Chords/C/C11.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="C9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                           <image>
+                              <Image url="@../Images/Chords/C/C9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Cmaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/C/Cmaj7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Csharp" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/C/Csharp.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Csharpm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/C/Csharpm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Csharp7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/C/Csharp7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Csharpmaj" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/C/Csharpmaj.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Cadd9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/C/Cadd9.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="73.0" layoutY="215.0" text="Click on a chord to listen!">
+                     <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="D-Chords">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane layoutY="14.0" prefHeight="201.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="D" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chords/D/D.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="D7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/D/D7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dm7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dm7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="D4" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                           <image>
+                              <Image url="@../Images/Chords/D/D4.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="D9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                           <image>
+                              <Image url="@../Images/Chords/D/D9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dsus2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dsus2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dsharp" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dsharp.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dsharpm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dsharpm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dsharpm7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dsharpm7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dsharp7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dsharp7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Dmaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/D/Dmaj7.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="73.0" layoutY="215.0" text="Click on a chord to listen!">
+                     <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="E-Chords">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane layoutY="14.0" prefHeight="201.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="E" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chords/E/E.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="E7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/E/E7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Em" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Images/Chords/E/Em.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Em7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Images/Chords/E/Em7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="E6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                           <image>
+                              <Image url="@../Images/Chords/E/E6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="E9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                           <image>
+                              <Image url="@../Images/Chords/E/E9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Emaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/E/Emaj7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="E7b9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/E/E7b9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="E7sharp9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/E/E7sharp9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Ebadd9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/E/Ebadd9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Em6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/E/Em6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Esus" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/E/Esus.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="73.0" layoutY="215.0" text="Click on a chord to listen!">
+                     <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="F-Chords">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane layoutY="14.0" prefHeight="201.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="F" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chords/F/F.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="F7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/F/F7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Fm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Images/Chords/F/Fm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Fm7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Images/Chords/F/Fm7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="F6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                           <image>
+                              <Image url="@../Images/Chords/F/F6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="F9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                           <image>
+                              <Image url="@../Images/Chords/F/F9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Fmaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/F/Fmaj7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Fsharp" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/F/Fsharp.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Fsharpm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/F/Fsharpm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="F11" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/F/F11.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Fm6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/F/Fm6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Fmmaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/F/Fmmaj7.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="73.0" layoutY="215.0" text="Click on a chord to listen!">
+                     <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab closable="false" text="G-Chords">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane layoutY="14.0" prefHeight="201.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="G" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Chords/G/G.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="G7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/G/G7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Gm" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../Images/Chords/G/Gm.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Gm7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../Images/Chords/G/Gm7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="G4Chord" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                           <image>
+                              <Image url="@../Images/Chords/G/G4chord.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="G9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                           <image>
+                              <Image url="@../Images/Chords/G/G9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Gmaj7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/G/Gmaj7.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="G7sharp9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/G/G7sharp9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="G11" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/G/G11.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Gadd9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/G/Gadd9.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Gm6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/G/Gm6.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="Gmaj9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Images/Chords/G/Gmaj9.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="73.0" layoutY="215.0" text="Click on a chord to listen!">
+                     <font>
+                        <Font name="System Bold Italic" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>

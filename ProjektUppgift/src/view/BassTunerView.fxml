@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BassTunerController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/bass2.jpg" />
+         </image></ImageView>
+      <Line fx:id="E1" endY="400.0" rotate="1.0" stroke="TRANSPARENT" strokeWidth="7.0">
+         <StackPane.margin>
+            <Insets right="24.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Line>
+      <Line fx:id="A" endY="400.0" rotate="0.5" stroke="#54eb0e00" strokeWidth="7.0">
+         <StackPane.margin>
+            <Insets right="-26.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Line>
+      <Line fx:id="D" endY="400.0" stroke="#ff000000" strokeWidth="7.0">
+         <StackPane.margin>
+            <Insets right="-77.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Line>
+      <Line fx:id="G" endY="400.0" stroke="#6200ff00" strokeWidth="7.0">
+         <StackPane.margin>
+            <Insets right="-120.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Line>
+      <Text fill="RED" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" text="E  A  D  G" wrappingWidth="102.13671875" StackPane.alignment="BOTTOM_CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <StackPane.margin>
+            <Insets right="-65.0" />
+         </StackPane.margin>
+      </Text>
+      <Button fx:id="helpButton" mnemonicParsing="false" text="?" StackPane.alignment="TOP_LEFT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</StackPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+   <top>
+      <ToolBar maxHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+         <items>
+            <Button fx:id="chordLibraryButton" mnemonicParsing="false" text="Chord Library" />
+            <MenuButton mnemonicParsing="false" text="Tuner">
+               <items>
+                  <MenuItem fx:id="guitarButton" mnemonicParsing="false" text="Guitar" />
+                  <MenuItem fx:id="bassButton" mnemonicParsing="false" text="Bass" />
+               </items>
+            </MenuButton>
+            <Button fx:id="drumkitButton" mnemonicParsing="false" text="Drumkit" />
+            <Button fx:id="quitButton" mnemonicParsing="false" text="Quit" />
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="403.0" fitWidth="600.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/bass2.jpg" />
+               </image>
+               <effect>
+                  <SepiaTone>
+                     <input>
+                        <ColorAdjust brightness="-0.83" contrast="-0.29" hue="-0.69" saturation="-1.0" />
+                     </input>
+                  </SepiaTone>
+               </effect>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="45.0" text="Music" textFill="#ee0707">
+               <font>
+                  <Font name="System Bold" size="96.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="WHITE" spread="0.95" />
+               </effect></Label>
+            <Label layoutX="338.0" layoutY="45.0" text="Mate" textFill="#c90606" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="96.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="WHITE" spread="0.92" />
+               </effect>
+            </Label>
+            <Label layoutX="225.0" layoutY="165.0" prefHeight="105.0" prefWidth="146.0" text="v1.0" textFill="#c90606" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="72.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="WHITE" spread="0.92" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

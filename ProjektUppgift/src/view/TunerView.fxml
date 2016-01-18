@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GuitarTunerController">
+   <children>
+      <ImageView fitHeight="413.0" fitWidth="599.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/guitar.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="bigE" fill="#e5e5e500" height="400.0" rotate="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="10.0">
+         <StackPane.margin>
+            <Insets left="-82.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Rectangle>
+      <Rectangle fx:id="A" arcHeight="5.0" arcWidth="5.0" fill="#6fff2100" height="400.0" rotate="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="10.0">
+         <StackPane.margin>
+            <Insets left="-45.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Rectangle>
+      <Rectangle fx:id="D" arcHeight="5.0" arcWidth="5.0" fill="#ff212100" height="400.0" rotate="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="10.0">
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Rectangle>
+      <Rectangle fx:id="G" arcHeight="5.0" arcWidth="5.0" fill="#fff82100" height="400.0" rotate="0.1" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="10.0">
+         <StackPane.margin>
+            <Insets left="40.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Rectangle>
+      <Text fx:id="currentTuningText" fill="RED" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="Standard E" wrappingWidth="167.10546875" StackPane.alignment="TOP_RIGHT">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="B" arcHeight="5.0" arcWidth="5.0" fill="#ff219700" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="10.0">
+         <StackPane.margin>
+            <Insets left="76.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Rectangle>
+      <Rectangle fx:id="smallE" arcHeight="5.0" arcWidth="5.0" fill="#18528500" height="400.0" rotate="-0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="10.0">
+         <StackPane.margin>
+            <Insets left="110.0" />
+         </StackPane.margin>
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Rectangle>
+      <Text fx:id="stringsText" fill="RED" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="   E A D G B E" StackPane.alignment="BOTTOM_CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="helpButton" mnemonicParsing="false" text="?" StackPane.alignment="TOP_LEFT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</StackPane>
